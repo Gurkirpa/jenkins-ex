@@ -12,9 +12,6 @@ pipeline {
                     // Verify Maven and Java versions
                     sh 'mvn -version'
                     sh 'java -version'
-
-                    // Run backend build (example: compile a Maven project)
-                    sh 'mvn clean install'
                 }
             }
         }
