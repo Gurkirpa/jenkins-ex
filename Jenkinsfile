@@ -4,7 +4,7 @@ pipeline {
         stage('Backend Build') {
             agent {
                 docker {
-                    image 'maven:3.8.7-openjdk-18-slim' // Maven with OpenJDK 18
+                    image 'maven:3.8.1-adoptopenjdk-11' // Maven with OpenJDK 18
                 }
             }
             steps {
